@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./PokemonCard.css";
 import useFlip from "./hooks/useFlip";
 
@@ -22,7 +22,7 @@ function PokemonCard({ front, back, name, stats }) {
           </div>
         </div>
       ) : (
-        <div className="PokemonCard-back">
+        <div className="PokemonCard-back">  
           <img src={back} alt={`{name} back`} />
         </div>
       )}
